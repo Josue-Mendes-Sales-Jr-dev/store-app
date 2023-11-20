@@ -1,7 +1,5 @@
 "use Client"
 
-
-import { CartProvider } from "@/components/context"
 import { ThemeProvider } from "styled-components"
 import GlobalStyles from "@/styles/globalStyles"
 
@@ -15,12 +13,12 @@ const theme = {
 export default function App({ Component, pageProps }:any) {
   return (
     <>
-      <CartProvider>
-        <GlobalStyles/>
+     
         <ThemeProvider theme={theme}>
           <Component {...pageProps} />
+          <GlobalStyles/>
         </ThemeProvider>
-      </CartProvider>
+    
     </>
   )
 }

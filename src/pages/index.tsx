@@ -1,6 +1,6 @@
 import { Layout } from '@/components/layout'
 import {Card} from '../components/card'
-import * as H from './styled'
+import * as H from '../styles/styled'
 import { Navbar } from '@/components/navbar'
 import { useState } from 'react'
 import { ItemCart } from '@/components/itemCart'
